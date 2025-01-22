@@ -9,7 +9,7 @@
         <param name="use_sim_time" value="$(var use_sim_time)" />
     </node>
 
-    <node pkg="rviz2" exec="rviz2" name="tf_rviz" args="-d $(find-pkg-share pose_publisher)/config/tf_viz.rviz">
+    <node pkg="rviz2" exec="rviz2" name="tf_rviz" args="-d $(find-pkg-share pose_publisher)/rviz/tf.rviz">
         <param name="use_sim_time" value="$(var use_sim_time)" />
     </node>
 </launch>
