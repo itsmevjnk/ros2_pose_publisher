@@ -26,7 +26,7 @@ setup(
     entry_points={
         'console_scripts': [
             'pub_node = pose_publisher.pose_publisher:main',
-            'pcl_node = pose_publisher.pose_to_pcl:main'
+            'pcl_node = pose_publisher.pose_to_pcl:main',
             'tf_node = pose_publisher.pose_to_tf:main'
         ],
     },
