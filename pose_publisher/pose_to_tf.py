@@ -19,7 +19,7 @@ class PoseToTF(Node):
 
     def pose_cb(self, data: TransformStamped):
         data.header.stamp = self.get_clock().now().to_msg() # fix timestamp in case weird things happen
-        self.get_logger().info(f'sending out {data.header.frame_id} -> {data.child_frame_id} transform to tf2')
+        # self.get_logger().info(f'sending out {data.header.frame_id} -> {data.child_frame_id} transform to tf2')
         self.tf_broadcaster.sendTransform(data)
 
 def main(args=None):
